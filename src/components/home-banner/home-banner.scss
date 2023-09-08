@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Antique+B1&display=swap');
+
+.home-banner {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    // background: white;
+    align-items: center;
+
+    @media screen and (max-width:800px) {
+        flex-direction: column;
+    }
+
+    &__left {
+        .heading {
+            font-size: 6rem;
+            font-family: 'Poppins' sans-serif;
+            font-weight:  400;
+            letter-spacing: 3px;
+            line-height:6rem;
+            width: 20%;
+            @media screen and (max-width:800px) {
+                font-size: 4rem;
+                text-align: center;
+                width:100%;
+            }
+        }
+        .sub-heading {
+            margin-top: 1rem;
+            width: 70%;
+            color: rgb(94, 93, 93);
+            @media screen and (max-width:800px) {
+
+                text-align: center;
+                width:100%;
+            }
+        }
+        
+        .price {
+            color: rgb(63, 63, 63);
+            margin-top: 5rem;
+            font-size: 1rem;
+            @media screen and (max-width:800px) {
+                margin-top: 2rem;
+                text-align: center;
+         
+            }
+            span {
+                color: black;
+                font-size: 1.3rem;
+                font-weight: 600;
+               
+            }
+        }
+        @media screen and (max-width:800px) {
+            .shop-button-container {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .shop-button {
+            margin-top: 1.4rem;
+         
+            padding: 12px 50px;
+
+            background-color: white;
+            border: 1px solid rgb(94, 93, 93);
+            transition: all 0.3s ease-in-out;
+            a {
+                font-size: 1rem;
+            }
+            cursor: pointer;
+            &:hover {
+                background: black;
+                a{
+                color: white;
+                }
+            }
+        }
+    }
+    &__right {
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @media screen and (max-width:800px) {
+            margin-top: 3rem;
+        }
+      
+        img {
+          width: 480px;
+          @media screen and (max-width:800px) {
+              width: 300px;
+        }
+   
+          transition: all 1s ease-in-out;
+          &:hover {
+              
+          }
+        }
+    }
+}

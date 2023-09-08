@@ -1,0 +1,37 @@
+.container {
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.699);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    @media screen and (max-width : 800px) {
+        width : 200px;
+        .heading {
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: white;
+        }
+        .content {
+            margin-top: 0.3rem;
+            color: white;
+            font-size: 0.8rem;
+    
+        }
+
+    }
+    &:hover {
+        background: black;
+    }
+    .heading {
+        font-weight: bold;
+        color: white;
+    }
+    .content {
+        margin-top: 0.3rem;
+        color: white;
+        font-size: 0.9rem;
+
+    }
+}

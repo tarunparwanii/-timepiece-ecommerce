@@ -1,0 +1,91 @@
+.contact-page {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-form {
+    height: 65vh;
+    @media screen and (max-width: 800px) {
+      width: 60vw;
+    }
+    @media screen and (max-width: 650px) {
+      width: 85vw;
+    }
+    width: 50vw;
+    border-radius: 10px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.055);
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
+    margin: auto;
+    .picture {
+      background: url("https://images.unsplash.com/photo-1619976396248-56d05beb2919?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80")
+        center center/cover;
+      border-radius: 10px;
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+      height: 100%;
+      width: 40%;
+    }
+    .form {
+      padding: 2rem;
+      &-heading {
+        font-size: 1.8rem;
+        font-weight: 500;
+        @media screen and (max-width: 800px) {
+          display: 1.3rem;
+        }
+      }
+      .inputs {
+        margin-top: 1rem;
+        .input-1 {
+          margin-top: 1rem;
+          label {
+            display: block;
+            color: rgb(0, 0, 0);
+            font-size: 1rem;
+          }
+          input {
+            width: 350px;
+            border: none;
+            @media screen and (max-width: 650px) {
+              width: 300px;
+            }
+
+            height: 34px;
+            border-radius: 3px;
+            margin-top: 0.6rem;
+            padding: 0.5rem;
+            // font-size: 0.9rem;
+          }
+          textarea {
+            margin-top: 0.6rem;
+            height: 100px;
+            width: 350px;
+            border: none;
+            @media screen and (max-width: 650px) {
+              width: 300px;
+            }
+            padding: 0.6rem;
+            font-size: 0.9rem;
+          }
+        }
+        button {
+          margin-top: 1rem;
+          background: transparent;
+          border: 1px solid black;
+          padding: 10px 40px;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

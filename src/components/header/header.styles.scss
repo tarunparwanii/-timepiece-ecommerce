@@ -1,0 +1,74 @@
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    @media screen and (max-width: 800px) {
+        height : 60px;
+        padding : 10px;
+        margin-bottom : 20px;
+    }
+}
+
+.logo-container {
+    height: 100%;
+    width: 120px;
+    padding: 25px;
+    
+@media screen and (max-width: 800px) {
+    width : 50px;
+    padding : 0;
+}
+}
+
+.options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @media screen and (max-width: 800px) {
+        width : 80%;
+    }
+    
+}
+
+.option {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    @media screen and (max-width:800px) {
+        font-size: 1.1rem;
+        padding: 10px  10px;
+    }
+
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media screen and (min-width:800px) {
+    
+
+.loginLink {
+    background: black;
+    color: white;
+    padding: 3px 20px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background: rgb(39, 39, 39);
+        color: rgb(180, 180, 180);
+    }
+    @media screen and (max-width:800px) {
+        .shop-button-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+}   
